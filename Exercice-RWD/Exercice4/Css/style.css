@@ -1,0 +1,84 @@
+
+ .page
+ {
+     display: flex;
+     flex-direction: row;
+     text-align: center;
+     flex-wrap: wrap;
+     width: 960px;
+     height: 400px;
+ }
+ 
+ @media screen and (min-width : 401px) and(max-width : 960px)
+ {
+     .feature-1,.feature-2,.feature-3
+     {
+         width: calc(100%/3);
+     }
+ }
+
+ @media screen and (min-width :961px)
+ {
+     .feature-1,.feature-2,.feature-3
+     {
+         width: calc(100%/3);
+     }
+    
+ 
+ }
+ 
+
+    .menu
+    {   
+    height: 40px;
+    background-color: royalblue;
+    flex: 100%;
+    }
+    .header
+    {
+        height: 100px;
+        background-color: lightblue;
+        order: 1;
+        flex: 100%;
+    }
+    .content
+    {
+         height: 100px;
+         background-color: lightgreen;
+         order: 4;
+         flex: 100%;
+        
+         
+     }
+     .sign-up
+    {
+        height: 100px;
+        background-color: grey;
+        order: 3;
+        flex: 100%;
+    }
+  
+    .feature-1
+    {
+        height: 100px;
+        background-color: orange;
+        order: 2;
+        flex: 1/3;
+        
+    }
+    .feature-2
+    {
+        height: 100px;
+        background-color:lightcoral;
+        order: 2;
+        flex: 1/3;
+        
+    }
+     .feature-3
+    {
+        height: 100px;
+        background-color: purple;
+        order: 2;
+        flex: 1/3;
+        
+    }
